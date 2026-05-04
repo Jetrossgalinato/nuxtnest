@@ -13,7 +13,7 @@ const handleError = () => clearError({ redirect: "/" });
   >
     <div class="max-w-md w-full text-center space-y-6">
       <!-- Status Code -->
-      <h1 class="text-8xl font-light tracking-tighter text-gray-900">
+      <h1 class="text-8xl font-light tracking-tighter text-destructive">
         {{ error.statusCode || 500 }}
       </h1>
 

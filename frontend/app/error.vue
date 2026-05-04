@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { NuxtError } from "#app";
+import Button from "./components/ui/button/Button.vue";
 
 defineProps<{ error: NuxtError }>();
 
@@ -32,12 +33,7 @@ const handleError = () => clearError({ redirect: "/" });
 
       <!-- Action Button -->
       <div class="pt-6">
-        <button
-          @click="handleError"
-          class="inline-flex items-center justify-center px-6 py-2.5 border border-gray-200 shadow-sm text-sm font-medium rounded-lg text-gray-700 bg-white hover:bg-gray-100 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-200 transition-all duration-200"
-        >
-          Go back home
-        </button>
+        <Button @click="handleError"> Go back home </Button>
       </div>
     </div>
   </div>

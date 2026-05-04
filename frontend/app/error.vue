@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import type { NuxtError } from "#app";
-import Button from "./components/ui/button/Button.vue";
 
 defineProps<{ error: NuxtError }>();
 
@@ -9,26 +8,26 @@ const handleError = () => clearError({ redirect: "/" });
 
 <template>
   <div
-    class="min-h-screen flex flex-col items-center justify-center bg-gray-50 text-gray-800 px-6 font-sans"
+    class="min-h-screen flex flex-col items-center justify-center bg-background text-foreground px-6"
   >
     <div class="max-w-md w-full text-center space-y-6">
       <!-- Status Code -->
-      <h1 class="text-8xl font-light tracking-tighter text-destructive">
+      <TypographyH1 class="text-8xl font-medium text-destructive">
         {{ error.statusCode || 500 }}
-      </h1>
+      </TypographyH1>
 
       <!-- Error Message -->
       <div class="space-y-2">
-        <h2 class="text-2xl font-medium tracking-tight">
+        <TypographyH2 class="text-2xl font-medium">
           Oops! Something went wrong.
-        </h2>
-        <p class="text-gray-500 text-sm">
+        </TypographyH2>
+        <TypographyP class="text-foreground/60">
           {{
             error.statusMessage ||
             error.message ||
             "We couldn't find the page you were looking for."
           }}
-        </p>
+        </TypographyP>
       </div>
 
       <!-- Action Button -->

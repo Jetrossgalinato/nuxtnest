@@ -25,7 +25,7 @@ const delegatedProps = reactiveOmit(props, "class");
     v-bind="delegatedProps"
     :class="
       cn(
-        'scroll-m-20 border-b pb-2 text-4xl font-semibold tracking-tight first:mt-0',
+        'scroll-m-20 pb-2 text-4xl font-semibold tracking-tight first:mt-0',
         props.class,
       )
     "

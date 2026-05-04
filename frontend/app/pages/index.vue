@@ -1,5 +1,7 @@
-<template>
-  <div>
-    <Navbar />
-  </div>
-</template>
+<script setup>
+definePageMeta({
+  layout: "outer-layout",
+});
+</script>
+
+<template></template>

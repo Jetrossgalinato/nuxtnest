@@ -1,7 +1,11 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>
-    <Navbar />
-  </div>
+  <div>Hello</div>
 </template>
+
+<style scoped>
+div {
+  font-family: Roboto, sans-serif;
+}
+</style>

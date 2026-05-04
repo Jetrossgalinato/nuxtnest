@@ -4,7 +4,7 @@ import { fileURLToPath } from "url";
 export default defineNuxtConfig({
   compatibilityDate: "2025-07-15",
   devtools: { enabled: true },
-  modules: ["@nuxt/fonts"],
+  modules: ["@nuxt/fonts", "@nuxtjs/color-mode"],
   css: ["~/assets/css/main.css"],
   ssr: false, // Disable SSR for a pure client-side app
 

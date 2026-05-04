@@ -1,5 +1,5 @@
 <template>
   <span>
-    <h1>Navbar</h1>
+    <ModeToggle />
   </span>
 </template>

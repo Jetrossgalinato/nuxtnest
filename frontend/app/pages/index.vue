@@ -1,5 +1,5 @@
 <template>
   <div>
-    <h1>SSR Test</h1>
+    <TypographyH3>This is the Home page</TypographyH3>
   </div>
 </template>
